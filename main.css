@@ -1,0 +1,23 @@
+header{
+    background-color: chartreuse;
+    min-height: 12em;
+}
+main{
+    background-color: rgb(255, 0, 21);
+    min-height: 26em;
+}
+footer{
+    background-color: pink;
+    min-height: 12em;
+}
+
+.input{
+    
+}
+#inp{
+    width: 100%;
+    max-width: 800px;
+    display: inline-block;
+    margin: 0 auto;
+
+}
