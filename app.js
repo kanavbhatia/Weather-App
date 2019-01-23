@@ -14,7 +14,7 @@ button.click(function(){
         method: 'GET',
         success: function(data){
             info = `Temperature in ${data.location.region} (${data.location.country}) is ${data.current.temp_c} and it will be ${data.current.condition.text} today `
-            var prop_temp = `${data.current.temp_c} C`
+            var prop_temp = `${data.current.temp_c}°C`
             result.text(prop_temp)
             result1.text(data.location.region)
             result2.text(data.current.condition.text)

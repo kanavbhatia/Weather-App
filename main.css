@@ -1,13 +1,16 @@
+*{
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
 header{
     background-color: chartreuse;
-    min-height: 12em;
+    /* min-height: 12em; */
 }
 main{
-    background-color: rgb(255, 0, 21);
+    background-image: url("https://i.pinimg.com/originals/bd/01/fb/bd01fb54be923a87fda72f8482b60395.jpg");
     min-height: 26em;
 }
 footer{
-    background-color: pink;
+    background-color: #1e202c;
     min-height: 12em;
 }
 
@@ -28,21 +31,21 @@ footer{
     margin: auto;
 }
 #temp{
-    background-color: blueviolet;
+    background-color: #323545;
     min-height: 12em;
     width: 33%;
     display: inline-block;
     position: relative;
 }
 #loc{
-    background-color: palevioletred;
+    background-color: #262937;
     min-height: 12em;
     width: 33%;
     display: inline-block;
     position: relative;
 }
 #weather{
-    background-color: yellowgreen;
+    background-color: #323545;
     min-height: 12em;
     width: 33%;
     display: inline-block;
@@ -53,14 +56,15 @@ footer{
     font-size: 8em;
     top: -1em;
     left: 0.4em;
+    color: white;
 }
 #res1{
-    display: inline-block;
     display: inline-block;
     position: absolute;
     font-size: 8em;
     top: -1em;
     left: 0.4em;
+    color: white;
 }
 #res2{
     display: inline-block;
@@ -68,7 +72,27 @@ footer{
     font-size: 5em;
     top: -.5em;
     left: 2.4em;
+    color: white;
 }
 #icon{
+    display: block;
     width: 12em;
+}
+body{
+    margin: 0;
+}
+.align{
+    background-color: #1e202c;
+    color: #009bdd;
+    margin: 0;
+    padding: 53px 0 53px 0;
+    text-align: right;
+
+}
+.align li{
+    display: inline-block;
+    padding-left: 20px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 18px;
 }
