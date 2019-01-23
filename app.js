@@ -9,13 +9,7 @@ let spinner = $('#spinner')
 let spinner1 = $('#spinner1')
 let spinner2 = $('#spinner2')
 button.click(function(){
-    $("#res").css({"display": "none"});
-    $("#res1").css({"display": "none"});
-    $("#res2").css({"display": "none"});
-    $("#icon").css({"display": "none"});
-    $("#spinner").css({"display": "block"});
-    $("#spinner1").css({"display": "block"});
-    $("#spinner2").css({"display": "block"});
+    $.fn.disable()
     let city = input.val()
     // console.log(value)
     var info = ''
@@ -23,13 +17,7 @@ button.click(function(){
         url: `https://api.apixu.com/v1/current.json?key=${key}&q=${city}`,
         method: 'GET',
         success: function(data){
-            $("#spinner").css({"display": "none"});
-            $("#spinner1").css({"display": "none"});
-            $("#spinner2").css({"display": "none"});
-            $("#res").css({"display": "block"});
-            $("#res1").css({"display": "block"});
-            $("#res2").css({"display": "block"});
-            $("#icon").css({"display": "block"});
+            $.fn.enable()
             info = `Temperature in ${data.location.region} (${data.location.country}) is ${data.current.temp_c} and it will be ${data.current.condition.text} today `
             var prop_temp = `${data.current.temp_c}°C`
             result.text(prop_temp)
@@ -41,13 +29,8 @@ button.click(function(){
 
         },
         error: function(error){
-            $("#spinner").css({"display": "none"});
-            $("#spinner1").css({"display": "none"});
-            $("#spinner2").css({"display": "none"});
-            $("#res").css({"display": "block"});
-            $("#res1").css({"display": "block"});
-            $("#res2").css({"display": "block"});
-            $("#icon").css({"display": "block"});
+            $.fn.enable()
+            icon.css({"display": "block"});
             result.text("Error")
             result1.text("Error")
             result2.text("Error")
@@ -57,3 +40,21 @@ button.click(function(){
     })
 
 })
+$.fn.enable = function(){
+    spinner.css({"display": "none"});
+    spinner1.css({"display": "none"});
+    spinner2.css({"display": "none"});
+    result.css({"display": "block"});
+    result1.css({"display": "block"});
+    result2.css({"display": "block"});
+    icon.css({"display": "block"});
+}
+$.fn.disable = function(){
+    result.css({"display": "none"});
+    result1.css({"display": "none"});
+    result2.css({"display": "none"});
+    icon.css({"display": "none"});
+    spinner.css({"display": "block"});
+    spinner1.css({"display": "block"});
+    spinner2.css({"display": "block"});
+}
