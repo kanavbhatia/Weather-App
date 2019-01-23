@@ -12,12 +12,63 @@ footer{
 }
 
 .input{
-    
+    display: flex;
 }
 #inp{
     width: 100%;
     max-width: 800px;
     display: inline-block;
-    margin: 0 auto;
+    margin: 7em auto 5em auto;
 
+}
+#interbox{
+    background-color: honeydew;
+    min-height: 12em;
+    width: 80%;
+    margin: auto;
+}
+#temp{
+    background-color: blueviolet;
+    min-height: 12em;
+    width: 33%;
+    display: inline-block;
+    position: relative;
+}
+#loc{
+    background-color: palevioletred;
+    min-height: 12em;
+    width: 33%;
+    display: inline-block;
+    position: relative;
+}
+#weather{
+    background-color: yellowgreen;
+    min-height: 12em;
+    width: 33%;
+    display: inline-block;
+    position: relative;
+}
+#res{
+    position: absolute;
+    font-size: 8em;
+    top: -1em;
+    left: 0.4em;
+}
+#res1{
+    display: inline-block;
+    display: inline-block;
+    position: absolute;
+    font-size: 8em;
+    top: -1em;
+    left: 0.4em;
+}
+#res2{
+    display: inline-block;
+    position: absolute;
+    font-size: 5em;
+    top: -.5em;
+    left: 2.4em;
+}
+#icon{
+    width: 12em;
 }
