@@ -1,6 +1,7 @@
 *{
     font-family: "Roboto", "Open Sans", sans-serif;
-        box-sizing: border-box;
+    box-sizing: border-box;
+    transition: 1s;
 }
 
 
@@ -91,12 +92,15 @@ footer{
     display: inline-block;
     position: relative;
 }
+#temp:hover{
+  
+}
 
 
 #loc{
     background-color: #262937;
     min-height: 12em;
-    width: 33%;
+    width: 32%;
     display: inline-block;
     position: relative;
 }
@@ -334,6 +338,25 @@ body{
     color: white;
 }
 
-/* why is my page so moving */
 
-@media
+/* why is my page so moving */
+/* want to add hover on temperature without disturbing the layout */
+
+@media (max-width: 1100px){
+  #loc{
+    width: 100%;
+  }
+  #temp{
+    width: 100%;
+  }
+  #weather{
+    width: 100%;
+  }
+}
+@media (max-width:725px){
+
+  #logo img{
+    display: none;
+  }
+
+}
