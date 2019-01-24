@@ -13,6 +13,7 @@ button.click(function(){
     let city = input.val()
     // console.log(value)
     var info = ''
+    input.val('')
     $.ajax({
         url: `https://api.apixu.com/v1/current.json?key=${key}&q=${city}`,
         method: 'GET',

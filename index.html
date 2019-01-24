@@ -6,10 +6,12 @@
     <title>Weather Forecast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <ul class="align">
+            <li id="logo"> <img src="logo.png"> </li>
             <li id ='Home'>Home</li>
             <li id="about">About</li>
             <li id="gallery"> Gallery</li>
@@ -19,7 +21,9 @@
     <main>
         <div id="input">
             <input id="inp" type="text" placeholder="ENTER THE NAME OF THE CITY">
-            <button id="but"> Click me</button>
+            <button id="but"> 
+                <i class="fas fa-search"></i>
+            </button>
         </div>
         <div>
             <div id="interbox">
@@ -46,7 +50,7 @@
         </div>
     </main>
     <footer>
-
+        <p id='end'>All rights reserved</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>

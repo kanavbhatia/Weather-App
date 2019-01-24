@@ -21,19 +21,58 @@ footer{
     min-height: 12em;
 }
 
+#logo{
+  position: absolute;
+  top: 2em;
+  left: 4em;
+  /* overflow: auto; */
+  border: none;
 
+}
+#logo img{
+  width: 8em;
+  height: 5em;
+}
 
-.input{
-    display: flex;
+#input{
+  margin: 0 17vw 21vh 22vw;
+  padding-top: 15vh;
+}
+
+#but{
+  border-radius: 3em;
+  height: 4em;
+  font-size: 1em;
+  background-color: #1e202c;
+  color: #009bdd;
+  cursor: pointer;
+  transition: 1s;
+  opacity: 0.8;
+  margin-left: -3.5em;
+  padding: 1em;
 }
 
 
 #inp{
-    width: 100%;
+    width: 80%;
     max-width: 800px;
-    display: inline-block;
-    margin: 7em auto 5em auto;
-
+    height: 4em;
+    border-radius: 4em;
+    font-size: 1em;
+    background-color: white;
+    color: #009bdd;
+    transition: 1s;
+    opacity: 0.8;
+}
+#inp:hover{
+  /* color: white; */
+  font-size: 1.1em;
+  opacity: 1;
+}
+#but:hover{
+  color: white;
+  font-size: 1.1em;
+  opacity: 1;
 }
 
 
@@ -124,13 +163,17 @@ body{
     text-align: right;
 
 }
+.align li:hover{
+  border: 2px solid;
+
+}
 
 
 .align li{
     display: inline-block;
     padding: 4px 13px 4px 13px;
+    transition: 1s;
     cursor: pointer;
-    border: 2px solid;
     border-radius: 100px;
     margin-right: 36px;
 }
@@ -284,5 +327,13 @@ body{
     display: none;
     padding: 4em 0em 0em 10em;
 }
+
+#end{
+    margin: 0;
+    padding-top: 2em;
+    color: white;
+}
+
+/* why is my page so moving */
 
 @media
