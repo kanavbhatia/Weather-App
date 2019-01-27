@@ -64,6 +64,7 @@ footer{
     color: #009bdd;
     transition: 1s;
     opacity: 0.8;
+    outline: none;
 }
 #inp:hover{
   /* color: white; */
